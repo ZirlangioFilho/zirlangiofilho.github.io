@@ -4,6 +4,12 @@ import { devices } from "../../styles/responsive";
 
 export const Container = styled.section`
   padding: 64px 68px;
+  padding-top: 0;
+  width: 100%;
+  @media ${devices.mobile}{
+    padding: 32px 24px;
+    padding-top: 0;
+ }
 `
 
 export const AreaContact = styled.div`

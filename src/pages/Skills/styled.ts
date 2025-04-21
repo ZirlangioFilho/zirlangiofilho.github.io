@@ -1,7 +1,13 @@
 import styled from "styled-components";
+import { devices } from "../../styles/responsive";
 
 export const Container = styled.section`
  padding: 64px 68px;
+ margin-top: 32px;
+
+ @media ${devices.mobile}{
+    padding: 32px 24px;
+ }
 `
 
 export const AreaBlock = styled.div`
@@ -10,4 +16,8 @@ export const AreaBlock = styled.div`
     padding: 64px 0;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media ${devices.mobile}{
+    padding: 32px 0;
+ }
 `

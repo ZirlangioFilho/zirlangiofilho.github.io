@@ -35,7 +35,7 @@ export const Container = styled.section`
     @media ${devices.medium}{
         background-size: cover;
         background-position: -550px;
-        height: 100vh;
+        height: 90vh;
     }
     `
 export const AreaIntro = styled.div`
@@ -76,6 +76,7 @@ export const Presentation = styled.div`
 
     @media ${devices.medium}{
         text-align: center;
+        align-items: center;
     }
 
 `
@@ -152,11 +153,16 @@ export const Img = styled.img`
     @media ${devices.medium} {
         scale: 1.0;
         /* display: none; */
+        
     }
+    @media ${devices.minMobile} {
+        display: none;
+    }
+
 `
 
 export const AreaButton = styled.div`
-
+    width: 300px;
 `
 export const Button = styled.a`
     text-decoration: none;

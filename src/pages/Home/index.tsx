@@ -17,7 +17,7 @@ export default function Home(){
                         </S.AreaSpan>
                     </S.AreaText>
                     <S.AreaButton>
-                        <S.Button href="#About">Saiba mais</S.Button>
+                        <S.Button href="#Habilidades">Saiba mais</S.Button>
                      </S.AreaButton>
                 </S.Presentation>
             <S.AreaImg>
