@@ -29,5 +29,5 @@ export const Title = styled.h2`
     }
 `
 export const Img = styled.img`
-
+    max-width: 120px;
 `

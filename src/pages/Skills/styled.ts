@@ -2,11 +2,15 @@ import styled from "styled-components";
 import { devices } from "../../styles/responsive";
 
 export const Container = styled.section`
- padding: 64px 68px;
+ padding: 0 2rem;
  margin-top: 32px;
+ margin-bottom: 32px;
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
 
  @media ${devices.mobile}{
-    padding: 32px 24px;
+   padding: 0 1rem;
  }
 `
 
@@ -19,9 +23,18 @@ export const AreaBlock = styled.div`
 
     @media ${devices.medium}{
     padding: 32px 0;
+    gap: 1rem;
  }
 `
 export const AreaTechBottom= styled.div`
 
 `
-export const TechBottom = styled.img``
+export const TechBottom = styled.img`
+   @media ${devices.medium}{
+      scale: 0.8;
+   }
+   @media ${devices.mobile}{
+      scale: 0.5;
+      margin-left: -2rem;
+   }
+`

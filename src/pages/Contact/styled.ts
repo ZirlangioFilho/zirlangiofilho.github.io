@@ -6,8 +6,9 @@ export const Container = styled.section`
   padding: 64px 68px;
   padding-top: 0;
   width: 100%;
+  
   @media ${devices.mobile}{
-    padding: 32px 24px;
+    padding: 2rem 1rem;
     padding-top: 0;
  }
 `
@@ -19,14 +20,14 @@ export const AreaContact = styled.div`
     align-items: center;
     gap: 2rem;
 
-    @media ${devices.medium}{
-        /* flex-direction: column-reverse; */
+    @media ${devices.mobile}{
+        flex-direction: column-reverse;
         
     }
 
 `
 export const DivForm = styled.div`
-
+  
 `
 
 export const Form = styled.form`
@@ -44,10 +45,16 @@ export const Form = styled.form`
     border-radius: 8px;
     font-size: 1rem;
     resize: none;
+
+    @media ${devices.mobile}{
+      width: 300px;
+      padding: 14px;
+      font-size: 14px;
+    }
   }
 
   button {
-    padding: 8px;
+    padding: 12px;
     background-color: ${theme.colors.white};
     color: ${theme.colors.black};
     border: none;
@@ -55,6 +62,13 @@ export const Form = styled.form`
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    width: 400px;
+
+  
+    @media ${devices.mobile}{
+      width: 300px;
+      font-size: 16px;
+    }
 
     &:hover {
       background-color: ${theme.colors.black};
@@ -71,14 +85,14 @@ export const AreaIcon = styled.div`
 `
 
 export const Icon = styled.img`
-    @media ${devices.medium}{
+    @media ${devices.mobile}{
         scale: 0.5;
     }
 `
 export const AreaText = styled.div`
     width: 350px;
 
-    @media ${devices.medium} {
+    @media ${devices.mobile} {
         width: 90%;
     }
 `
@@ -87,7 +101,7 @@ export const Text = styled.p`
     font-size: 22px;
     color: ${theme.colors.white};
 
-    @media ${devices.medium}{
+    @media ${devices.mobile}{
         font-size: 20px;
     }
 `

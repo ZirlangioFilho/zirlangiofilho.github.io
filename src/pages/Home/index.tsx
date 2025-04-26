@@ -2,7 +2,7 @@ import Header from '../../components/Header'
 import * as S from './styled'
 import Julio from "../../assets/foto-julio.svg"
 
-import Github from '../../assets/github.svg'
+import Github from '../../assets/white-github.svg'
 import Instagram from '../../assets/instagram.svg'
 import Linkedin from '../../assets/linkedin.svg'
 

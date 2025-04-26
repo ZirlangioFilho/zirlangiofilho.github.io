@@ -13,15 +13,24 @@ export const Container = styled.div`
     width: 400px;
 
     @media ${devices.medium}{
-        width: 250px;
-        padding: .875rem;
-        width: 191px;
+        gap: 6px;
+        width: 40%;
+        padding: 1rem;
+    }
+    @media ${devices.medium}{
+        gap: 6px;
+        width: 40%;
+        padding: 12px;
     }
 `
 export const SubTitle = styled.p`
     font-size: 26px;
     color: ${theme.colors.black};
     font-weight: bold;
+
+    @media ${devices.medium} {
+        font-size: 18px;
+    }
 `
 
 
@@ -29,8 +38,14 @@ export const Description = styled.p`
      font-size: 16px;
      color: ${theme.colors.black};
      font-weight: 500;
+     @media ${devices.medium} {
+        font-size: 14px;
+    }
 `
 export const Icon = styled.img`
     width: 50px;
-    height: 50px;
+
+    @media ${devices.medium} {
+        width: 40px;
+    }
 `
