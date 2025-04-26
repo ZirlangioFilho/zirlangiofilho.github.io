@@ -3,7 +3,7 @@ import Title from '../../components/Title';
 import emailjs from '@emailjs/browser';
 import * as S from './styled'
 
-import IconMensage from '../../assets/mensage.svg'
+import IconMessage from '../../assets/message.svg'
 
 export default function Contact() {
     const form = useRef<HTMLFormElement>(null);
@@ -30,22 +30,21 @@ export default function Contact() {
 
  return (
    <S.Container id="Contato">
-    <Title title='Contato'/>
+    <Title title='Contato' icon={IconMessage}/>
 
 
     <S.AreaContact>
-        <S.Form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" placeholder="Seu nome" required />
-          <input type="email" name="email" placeholder="Seu e-mail" required />
-          <textarea name="message" placeholder="Sua mensagem" required />
-          <button type="submit">Enviar</button>
-        </S.Form>
-        <S.AreaIcon>
-            <S.Icon src={IconMensage} />
-        </S.AreaIcon>
+        <S.DivForm>
+          <S.Form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="name" placeholder="Seu nome" required />
+            <input type="email" name="email" placeholder="Seu e-mail" required />
+            <textarea name="message" placeholder="Sua mensagem" required />
+            <button type="submit">Enviar</button>
+          </S.Form>
+        </S.DivForm>
         <S.AreaText>
             <S.Text>
-            “Qualidade é o trabalho número um.” Henry Ford
+            "Aqueles que podem imaginar qualquer coisa, podem criar o impossível." — Alan Turing
             </S.Text>
         </S.AreaText>
     </S.AreaContact>

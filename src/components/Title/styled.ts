@@ -1,9 +1,15 @@
 import styled from "styled-components";
 
-export const Container = styled.h2`
+export const Container = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`
+
+export const Title = styled.h2`
     font-size: 32px;
     color: #fff;
-    font-family: jomolhari;
+    font-family: lato;
 
     &::before{
         content: '';
@@ -21,4 +27,7 @@ export const Container = styled.h2`
         border-radius: 0px 10px 0px 0px;
         background: #fff;
     }
+`
+export const Img = styled.img`
+
 `

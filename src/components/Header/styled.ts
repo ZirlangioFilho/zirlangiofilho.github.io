@@ -3,17 +3,16 @@ import { theme } from "../../styles/theme";
 import { devices } from "../../styles/responsive";
 
 export const Container = styled.div ` 
-    padding: 2rem 4rem;
+    padding: 2rem 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 14px;
     position: relative;
     z-index:999;
 
-    @media ${devices.medium}{
-        padding: 2rem 12px;
-        justify-content: space-between;
+    @media ${devices.mobile}{
+        padding: 1rem 0;
     }
     
 `
@@ -27,7 +26,7 @@ export const Link = styled.a`
         text-shadow: 10px 1px 10px #fff;
     }
 
-    @media ${devices.medium}{
+    @media ${devices.mobile}{
        font-size: 22px;
     }
 `    
@@ -37,7 +36,7 @@ export const AreaLink = styled.div`
     justify-self: center;
     align-self: center;
 
-    @media ${devices.medium} {
+    @media ${devices.mobile} {
         display: none;
     }
 `
@@ -47,8 +46,8 @@ export const ResponsiveMenu = styled.nav<{isOpen: boolean}>`
   top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
   left: 0;
   width: 100%;
-  height: 45%;
-  background-color: ${theme.colors.dark};
+  height: 50%;
+  background-color: ${theme.colors.black};
   border-radius: 0px 0px 20px 20px;
   display: flex;
   flex-direction: column;
@@ -73,7 +72,13 @@ export const AreaResponsiveLink = styled.div`
 
 
 export const AreaImg = styled.div`
-    
+  display: flex;
+`
+
+export const IconLogo = styled.img`
+    color: ${theme.colors.white};
+    width: 60px;
+    height: 60px;
 `
 
 export const Button = styled.button`
@@ -82,7 +87,7 @@ export const Button = styled.button`
     border: none;
     display: none;
 
-    @media ${devices.medium}{
+    @media ${devices.mobile}{
         display: flex;
     }
 `
@@ -90,7 +95,7 @@ export const ButtonX = styled.button`
     cursor: pointer;
     background-color: transparent;
     border: none;
-    scale: 0.8;
+    scale: 0.5;
 `
 export const Icon = styled.img`
     width: 50px;
@@ -98,18 +103,5 @@ export const Icon = styled.img`
 `
 export const Img = styled.img`
     width: 50px;
-`
-export const Message = styled.p`
-    font-size: 18px;
-    color: cyan;
-    text-shadow: 2px 1px 1px gray;
-    letter-spacing: 3px;
-    white-space: nowrap;
-    min-width: 150px;
-    overflow: hidden;
-
-    @media ${devices.medium} {
-        font-size: 16px;
-    }
 `
 

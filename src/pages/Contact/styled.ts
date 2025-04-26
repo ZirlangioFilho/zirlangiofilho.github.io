@@ -17,11 +17,15 @@ export const AreaContact = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 2rem;
 
     @media ${devices.medium}{
-        flex-direction: column-reverse;
-        justify-content: center;
+        /* flex-direction: column-reverse; */
+        
     }
+
+`
+export const DivForm = styled.div`
 
 `
 
@@ -34,19 +38,18 @@ export const Form = styled.form`
   margin: 0 auto;
 
   input, textarea {
-    padding: 12px;
+    padding: 16px;
+    width: 400px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    font-family: jomolhari;
     font-size: 1rem;
     resize: none;
   }
 
   button {
-    padding: 4px;
-    background-color: ${theme.colors.primary};
-    color: ${theme.colors.white};
-    font-family: jomolhari;
+    padding: 8px;
+    background-color: ${theme.colors.white};
+    color: ${theme.colors.black};
     border: none;
     font-size: 20px;
     border-radius: 8px;
@@ -55,6 +58,7 @@ export const Form = styled.form`
 
     &:hover {
       background-color: ${theme.colors.black};
+      color: ${theme.colors.white}
     }
   }
 `;
@@ -72,7 +76,7 @@ export const Icon = styled.img`
     }
 `
 export const AreaText = styled.div`
-    width: 300px;
+    width: 350px;
 
     @media ${devices.medium} {
         width: 90%;
@@ -80,9 +84,9 @@ export const AreaText = styled.div`
 `
 
 export const Text = styled.p`
-    font-size: 32px;
-    font-family: jomolhari;
-    color: #679093;
+    font-size: 22px;
+    color: ${theme.colors.white};
+
     @media ${devices.medium}{
         font-size: 20px;
     }

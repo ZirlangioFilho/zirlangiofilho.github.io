@@ -8,10 +8,13 @@ import WebDesign from "../../assets/web-design.svg";
 import WebDev from "../../assets/web-dev.svg";
 import MobileDev from "../../assets/mobile-dev.svg";
 
+import TechTop from '../../assets/tech-top.svg'
+import TechBottom from '../../assets/tech-Bottom.svg'
+
 export default function Skills() {
     return (
         <S.Container id="Habilidades">
-            <Title title='Habilidades' />
+            <Title title='Habilidades' icon={TechTop}/>
 
             <S.AreaBlock>
                 <BlockSkill
@@ -45,6 +48,10 @@ export default function Skills() {
                 />
 
             </S.AreaBlock>
+
+            <S.AreaTechBottom>
+                <S.TechBottom src={TechBottom}/>
+            </S.AreaTechBottom>
         </S.Container>
     )
 }

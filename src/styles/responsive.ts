@@ -1,5 +1,5 @@
 const breakpoints = {
-    medium: '1080px',
+    medium: '980px',
     mobile: '768px',
     minMobile: '768px'
 }

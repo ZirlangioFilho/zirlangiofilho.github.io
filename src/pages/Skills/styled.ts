@@ -17,7 +17,11 @@ export const AreaBlock = styled.div`
     flex-wrap: wrap;
     justify-content: center;
 
-    @media ${devices.mobile}{
+    @media ${devices.medium}{
     padding: 32px 0;
  }
 `
+export const AreaTechBottom= styled.div`
+
+`
+export const TechBottom = styled.img``
