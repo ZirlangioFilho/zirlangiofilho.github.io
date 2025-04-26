@@ -373,6 +373,7 @@ Error generating stack: `+l.message+`
 
     @media ${J.medium}{
         text-align: center;
+        font-size: 14px;
     }
 `,Md=Y.div`
     display: flex;
