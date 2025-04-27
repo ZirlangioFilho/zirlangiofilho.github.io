@@ -21,6 +21,7 @@ export const Link = styled.a`
     font-size: 18px;
     text-decoration: none;
     transition: .4s;
+    cursor: pointer;
 
     &&:hover{
         text-shadow: 10px 1px 10px #fff;

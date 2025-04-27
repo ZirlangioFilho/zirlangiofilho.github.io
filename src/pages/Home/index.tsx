@@ -7,6 +7,13 @@ import Instagram from '../../assets/instagram.svg'
 import Linkedin from '../../assets/linkedin.svg'
 
 export default function Home() {
+    const scrollToSection = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return(
         <S.Container>
             <Header />
@@ -24,7 +31,7 @@ export default function Home() {
                             <S.Name>Zirlangio Filho</S.Name>
                         </S.AreaTitle>
                         <S.Span>Criando interfaces modernas e responsivas com React e React Native. Focado em entregar experiências de usuário fluídas e inovadoras, de usuário fluídas e inovadoras..</S.Span>
-                        <S.Button>
+                        <S.Button onClick={() => scrollToSection('About')}>
                             <S.ButtonText>
                                 Saiba mais
                             </S.ButtonText>
@@ -36,14 +43,13 @@ export default function Home() {
                     <S.AreaImg>
                         <S.Img src={Julio} />
                     </S.AreaImg>
-                    <S.ButtonResponsive>
+                    <S.ButtonResponsive onClick={() => scrollToSection('About')}>
                         <S.ButtonTextResponsive>
                             Saiba mais
                         </S.ButtonTextResponsive>
                     </S.ButtonResponsive>
                 </S.DivImgResponsive>
-
             </S.Content>
         </S.Container>
-    )
+    );
 }

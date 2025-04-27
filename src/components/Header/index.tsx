@@ -10,6 +10,13 @@ export default function Header() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false); // Fecha o menu após clicar em um link
+    }
+  };
 
   return (
     <S.Container>
@@ -17,11 +24,11 @@ export default function Header() {
           <S.IconLogo src={Icon}/>
       </S.AreaImg>
       <S.AreaLink>
-          <S.Link href="#">Sobre</S.Link>
-          <S.Link href="#">Habilidades</S.Link>
-          <S.Link href="#">Ferramentas</S.Link>
-          <S.Link href="#">Portfólio</S.Link>
-          <S.Link href="#">Contatos</S.Link>
+          <S.Link onClick={() => scrollToSection('About')}>Sobre</S.Link>
+          <S.Link onClick={() => scrollToSection('Skills')}>Habilidades</S.Link>
+          <S.Link onClick={() => scrollToSection('Tools')}>Ferramentas</S.Link>
+          <S.Link onClick={() => scrollToSection('Portfolio')}>Portfólio</S.Link>
+          <S.Link onClick={() => scrollToSection('Contato')}>Contatos</S.Link>
       </S.AreaLink>
 
       <S.Button onClick={toggleMenu}><S.Icon src={Menu} /></S.Button>
@@ -32,11 +39,11 @@ export default function Header() {
         </S.AreaX>
 
         <S.AreaResponsiveLink>
-          <S.Link href="#">Sobre</S.Link>
-          <S.Link href="#">Habilidades</S.Link>
-          <S.Link href="#">Ferramentas</S.Link>
-          <S.Link href="#">Portfólio</S.Link>
-          <S.Link href="#">Contatos</S.Link>
+          <S.Link onClick={() => scrollToSection('About')}>Sobre</S.Link>
+          <S.Link onClick={() => scrollToSection('Skills')}>Habilidades</S.Link>
+          <S.Link onClick={() => scrollToSection('Tools')}>Ferramentas</S.Link>
+          <S.Link onClick={() => scrollToSection('Portfolio')}>Portfólio</S.Link>
+          <S.Link onClick={() => scrollToSection('Contato')}>Contatos</S.Link>
         </S.AreaResponsiveLink>
       </S.ResponsiveMenu>
 

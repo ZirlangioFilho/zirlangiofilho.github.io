@@ -34,19 +34,26 @@ export default function Contact() {
 
 
     <S.AreaContact>
-        <S.DivForm>
-          <S.Form ref={form} onSubmit={sendEmail}>
-            <input type="text" name="name" placeholder="Seu nome" required />
-            <input type="email" name="email" placeholder="Seu e-mail" required />
-            <textarea name="message" placeholder="Sua mensagem" required />
-            <button type="submit">Enviar</button>
-          </S.Form>
-        </S.DivForm>
-        <S.AreaText>
-            <S.Text>
-            "Aqueles que podem imaginar qualquer coisa, podem criar o impossível." — Alan Turing
-            </S.Text>
-        </S.AreaText>
+        <S.DivColumn>
+          <S.DivForm>
+            <S.Form ref={form} onSubmit={sendEmail}>
+              <input type="text" name="name" placeholder="Seu nome" required />
+              <input type="email" name="email" placeholder="Seu e-mail" required />
+              <textarea name="message" placeholder="Sua mensagem" required />
+              <button type="submit">Enviar</button>
+            </S.Form>
+          </S.DivForm>
+          <S.AreaText>
+              <S.Text>
+              "Aqueles que podem imaginar qualquer coisa, podem criar o impossível."<br></br> — Alan Turing
+              </S.Text>
+          </S.AreaText>
+        </S.DivColumn>
+        <S.Footer>
+          <S.TextFooter>
+            © 2025 Zirlangio Filho. Todos os direitos reservados.
+          </S.TextFooter>
+        </S.Footer>
     </S.AreaContact>
 
 

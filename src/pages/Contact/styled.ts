@@ -3,31 +3,35 @@ import { theme } from "../../styles/theme";
 import { devices } from "../../styles/responsive";
 
 export const Container = styled.section`
-  padding: 64px 68px;
-  padding-top: 0;
+  /* padding: 64px 68px;
+  padding-top: 0; */
   width: 100%;
   
-  @media ${devices.mobile}{
+  /* @media ${devices.mobile}{
     padding: 2rem 1rem;
     padding-top: 0;
- }
+ } */
 `
 
 export const AreaContact = styled.div`
     margin-top: 64px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
+  
 
-    @media ${devices.mobile}{
-        flex-direction: column-reverse;
-        
-    }
+`
+
+export const DivColumn = styled.div`
+display: flex;
+justify-content: space-around;
+align-items: center;
+gap: 2rem;
+
+@media ${devices.mobile}{
+    flex-direction: column-reverse;
+    
+}
 
 `
 export const DivForm = styled.div`
-  
 `
 
 export const Form = styled.form`
@@ -102,6 +106,21 @@ export const Text = styled.p`
     color: ${theme.colors.white};
 
     @media ${devices.mobile}{
-        font-size: 20px;
+        font-size: 16px;
+        text-align: center;
     }
+`
+export const Footer = styled.div`
+width: 100%;
+ text-align: center;
+ padding-top: 2rem;
+`
+
+export const TextFooter = styled.p`
+  color: ${theme.colors.white};
+  font-size: 16px;
+
+  @media ${devices.mobile}{
+    font-size: 14px;
+  }
 `

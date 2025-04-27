@@ -3,16 +3,16 @@ import { theme } from "../../styles/theme";
 import { devices } from "../../styles/responsive";
 
 export const Container = styled.section`
-    padding: 0rem 6rem;
+    /* padding: 0rem 3rem; */
     width: 100%;
 
     h1, span {
         font-weight: 400;
     }
 
-    @media ${devices.mobile}{
+    /* @media ${devices.mobile}{
         padding: 0rem 2rem;
-    }
+    } */
 `
 
 export const Content = styled.div`

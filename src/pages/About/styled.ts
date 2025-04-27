@@ -4,19 +4,18 @@ import { devices } from "../../styles/responsive";
 
 export const Container = styled.section`
     width: 100%;
-    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 2rem;
-    padding-top: 4rem;
+    /* padding: 0 2rem;
+    padding-top: 4rem; */
 
-    @media ${devices.medium}{
+    /* @media ${devices.medium}{
         padding: 0 1.5rem;
         padding-top: 4rem;
     }
     @media ${devices.mobile}{
         padding: 0 1rem;
         padding-top: 4rem;
-    }
+    } */
 `
 
 export const Content = styled.div`
@@ -58,6 +57,7 @@ export const AboutText = styled.p`
 
     @media ${devices.medium}{
         text-align: center;
+        font-size: 14px;
     }
 `
 

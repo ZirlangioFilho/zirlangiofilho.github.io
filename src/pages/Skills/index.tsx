@@ -13,7 +13,7 @@ import TechBottom from '../../assets/tech-Bottom.svg'
 
 export default function Skills() {
     return (
-        <S.Container id="Habilidades">
+        <S.Container id="Skills">
             <Title title='Habilidades' icon={TechTop}/>
 
             <S.AreaBlock>

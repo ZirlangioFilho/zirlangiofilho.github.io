@@ -3,7 +3,7 @@ import { theme } from "../../styles/theme";
 import { devices } from "../../styles/responsive";
 
 export const Container = styled.div`
-    padding: 22px 16px;
+    padding: .5rem 1rem;
     background: ${theme.colors.white};
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@ export const Description = styled.p`
     }
 `
 export const Icon = styled.img`
-    width: 50px;
+    width: 45px;
 
     @media ${devices.medium} {
         width: 40px;

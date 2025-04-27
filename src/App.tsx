@@ -7,10 +7,12 @@ import Contact from "./pages/Contact";
 export default function App() {
   return(
      <S.Container>
-       <Home />
-       <About />
-       <Skills />
-       <Contact />
+       <S.Content>
+         <Home />
+         <About />
+         <Skills />
+         <Contact />
+       </S.Content>
      </S.Container>
   )
 }
