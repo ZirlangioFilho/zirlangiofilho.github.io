@@ -403,7 +403,7 @@ Error generating stack: `+l.message+`
     height: auto;
     object-fit: contain;
 `,Hd=""+new URL("img-about-Cj12uFCl.svg",import.meta.url).href,Ud="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M26%2018H22V14H26M26%2034H22V22H26M24%204C21.3736%204%2018.7728%204.51732%2016.3463%205.52241C13.9198%206.5275%2011.715%208.00069%209.85786%209.85786C6.10714%2013.6086%204%2018.6957%204%2024C4%2029.3043%206.10714%2034.3914%209.85786%2038.1421C11.715%2039.9993%2013.9198%2041.4725%2016.3463%2042.4776C18.7728%2043.4827%2021.3736%2044%2024%2044C29.3043%2044%2034.3914%2041.8929%2038.1421%2038.1421C41.8929%2034.3914%2044%2029.3043%2044%2024C44%2021.3736%2043.4827%2018.7728%2042.4776%2016.3463C41.4725%2013.9198%2039.9993%2011.715%2038.1421%209.85786C36.285%208.00069%2034.0802%206.5275%2031.6537%205.52241C29.2272%204.51732%2026.6264%204%2024%204Z'%20fill='white'/%3e%3c/svg%3e";function jd(){return M.jsxs(zd,{id:"About",children:[M.jsx(y2,{title:"Sobre",icon:Ud}),M.jsxs(_d,{children:[M.jsx(Od,{children:M.jsx(Md,{children:"Sou desenvolvedor front-end e mobile, com especialização em React e React Native, apaixonado por criar aplicações que unem desempenho, usabilidade e estética. Tenho experiência no desenvolvimento de interfaces modernas e responsivas, integração de APIs, gerenciamento de estado e adaptação de layouts para diferentes plataformas. No meu trabalho, priorizo a escrita de código limpo, escalável e de fácil manutenção, sempre com foco na melhor experiência para o usuário. Tenho familiaridade com ferramentas de design, como Figma, para garantir a fidelidade entre o protótipo e o produto final. Acredito que a tecnologia é um meio poderoso para conectar pessoas e transformar ideias em soluções práticas. Estou constantemente em busca de aprimoramento e novos desafios que me permitam crescer e contribuir de forma significativa em projetos que impactem a vida das pessoas."})}),M.jsx(Dd,{children:M.jsx(Rd,{src:Hd})})]})]})}const wd=N.div`
-    padding: 20px 16px;
+    padding: .5rem 1rem;
     background: ${Kt.colors.white};
     display: flex;
     flex-direction: column;
@@ -438,7 +438,7 @@ Error generating stack: `+l.message+`
         font-size: 14px;
     }
 `,qd=N.img`
-    width: 50px;
+    width: 45px;
 
     @media ${k.medium} {
         width: 40px;
