@@ -1,10 +1,23 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import { theme } from "../../styles/theme";
 import { devices } from "../../styles/responsive";
 
-export const Container = styled.div`
+const AnimationBlock = keyframes`
+   0%{
+       filter: drop-shadow( 0 0 10px ${theme.colors.black});
+   }
+   25%{
+      filter: drop-shadow( 0 0 10px ${theme.colors.white});
+   }
+   75%{
+      filter: drop-shadow( 0 0 10px ${theme.colors.black});
+   }
+   
+`
+
+export const Container = styled.div<{ delay: number}>`
     padding: .5rem 1rem;
-    background: ${theme.colors.white};
+    background: ${theme.colors.green};
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -12,14 +25,17 @@ export const Container = styled.div`
     align-items: flex-start;
     width: 400px;
 
+    animation: ${AnimationBlock} 1s;
+   animation-delay: ${({ delay }) => delay}s;
+
     @media ${devices.medium}{
         gap: 6px;
         width: 40%;
         padding: 1rem;
     }
-    @media ${devices.medium}{
+    @media ${devices.mobile}{
         gap: 6px;
-        width: 40%;
+        width: 45%;
         padding: 12px;
     }
 `

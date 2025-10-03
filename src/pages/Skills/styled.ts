@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { devices } from "../../styles/responsive";
+// import { theme } from "../../styles/theme";
+
 
 export const Container = styled.section`
  /* padding: 0 2rem;
@@ -20,10 +22,12 @@ export const AreaBlock = styled.div`
     padding: 64px 0;
     flex-wrap: wrap;
     justify-content: center;
-
+   
     @media ${devices.medium}{
     padding: 32px 0;
     gap: 1rem;
+
+  
  }
 `
 export const AreaTechBottom= styled.div`

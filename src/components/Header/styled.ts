@@ -24,7 +24,7 @@ export const Link = styled.a`
     cursor: pointer;
 
     &&:hover{
-        text-shadow: 10px 1px 10px #fff;
+        text-shadow: 10px 1px 8px ${theme.colors.white};
     }
 
     @media ${devices.mobile}{

@@ -21,30 +21,35 @@ export default function Skills() {
                     icon={Github}
                     subTitle="Git version control"
                     description="Experiência em controle de versionamento utilizando Git e GitHub."
+                    delay={1}
                 />
 
                 <BlockSkill
                     icon={MobileDesign}
                     subTitle="Mobile UI Design"
                     description="Criação de interfaces intuitivas e responsivas para aplicativos mobile."
+                    delay={2}
                 />
 
                 <BlockSkill
                     icon={WebDesign}
                     subTitle="Web UI Design"
                     description="Design de páginas web modernas com foco em usabilidade e experiência do usuário."
+                    delay={3}
                 />
 
                 <BlockSkill
                     icon={WebDev}
                     subTitle="Web Development"
                     description="Desenvolvimento de aplicações web com boas práticas e foco em performance."
+                    delay={4}
                 />
 
                 <BlockSkill
                     icon={MobileDev}
                     subTitle="Mobile Development"
                     description="Criação de aplicativos móveis nativos e híbridos com foco em performance e experiência."
+                    delay={5}
                 />
 
             </S.AreaBlock>

@@ -59,7 +59,7 @@ export const Form = styled.form`
 
   button {
     padding: 12px;
-    background-color: ${theme.colors.white};
+    background-color: ${theme.colors.green};
     color: ${theme.colors.black};
     border: none;
     font-size: 20px;
@@ -76,7 +76,7 @@ export const Form = styled.form`
 
     &:hover {
       background-color: ${theme.colors.black};
-      color: ${theme.colors.white}
+      color: ${theme.colors.green}
     }
   }
 `;

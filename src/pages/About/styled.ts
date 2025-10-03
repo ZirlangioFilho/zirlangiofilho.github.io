@@ -1,6 +1,21 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { theme } from "../../styles/theme";
 import { devices } from "../../styles/responsive";
+
+const AnimationLoading = keyframes`
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+`
 
 export const Container = styled.section`
     width: 100%;
@@ -22,7 +37,7 @@ export const Content = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 2rem 0;
+    padding: 4rem 0;
     gap: 4rem;
 
     @media ${devices.medium}{
@@ -56,8 +71,9 @@ export const AboutText = styled.p`
     text-align: justify;
 
     @media ${devices.medium}{
-        text-align: center;
+        text-align: justify;
         font-size: 14px;
+        padding: 0 1rem;
     }
 `
 
@@ -68,6 +84,8 @@ export const AreaImg = styled.div`
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
+    position: relative;
+    transition: .4s;
 
     @media ${devices.medium}{
         max-width: 400px;
@@ -75,6 +93,27 @@ export const AreaImg = styled.div`
 
     @media ${devices.mobile}{
         max-width: 300px;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: ${theme.colors.white};
+        border-radius: 50%;
+        animation: ${AnimationLoading} 1s infinite;
+    }
+
+    &::before {
+        left: -20px;
+        animation-delay: 0s;
+    }
+
+    &::after {
+        right: -20px;
+        animation-delay: 0.5s;
     }
 `
 

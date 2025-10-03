@@ -28,7 +28,7 @@ export default function Home() {
                     <S.AreaText>
                         <S.AreaTitle>
                             <S.Span>Desenvolvedor Front-end e Mobile</S.Span>
-                            <S.Name>Zirlangio Filho</S.Name>
+                            <S.Name data-text="Zirlangio Filho">Zirlangio Filho</S.Name>
                         </S.AreaTitle>
                         <S.Span>Criando interfaces modernas e responsivas com React e React Native. Focado em entregar experiências de usuário fluídas e inovadoras, de usuário fluídas e inovadoras..</S.Span>
                         <S.Button onClick={() => scrollToSection('About')}>
