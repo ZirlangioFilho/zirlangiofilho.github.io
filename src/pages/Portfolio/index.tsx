@@ -3,17 +3,21 @@ import { project } from './project'
 import Title from '../../components/Title'
 import BlockPort from '../../components/BlockPort'
 import IconHand from '../../assets/check-portfolio.svg'
+import BigCircle from '../../assets/big-circle-icon.svg'
+import SmallCircle from '../../assets/small-circle-icon.svg'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Navigation } from 'swiper/modules'
 
-declare module 'swiper/css'
-declare module 'swiper/css/pagination'
-declare module 'swiper/css/navigation'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 
 export default function Portfolio() {
   return (
     <S.Container>
+      <S.BigCircle src={BigCircle} />
+      <S.SmallCircle src={SmallCircle} />
       <Title title='Portfolio' icon={IconHand} />
 
       <Swiper

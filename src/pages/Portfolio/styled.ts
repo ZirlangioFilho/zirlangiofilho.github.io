@@ -7,6 +7,7 @@ export const Container = styled.section`
   box-sizing: border-box;
   padding: 0;
   overflow: hidden;
+  position: relative;
 
   .swiper {
     width: 100%;
@@ -51,5 +52,43 @@ export const Container = styled.section`
   .swiper-button-next {
     color: ${theme.colors.green};  /* cor das setas */
     z-index: 20;
+    margin: 0 12px;
+  }
+`
+
+export const BigCircle = styled.img`
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    transform: translateY(-50%);
+    width: 557px;
+    height: 428px;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.6;
+
+  @media (max-width: 768px) {
+    width: 300px;
+        height: 300px;
+        right: -15%;
+        top: 56%;
+  }
+`
+
+export const SmallCircle = styled.img`
+  position: absolute;
+  top: 30%;
+  left: -5%;
+  opacity: 0.6;
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+  pointer-events: none;
+
+  @media (max-width: 768px) {
+    width: 100px;
+    height: 100px;
+    left: -10%;
+    top: 50%;
   }
 `

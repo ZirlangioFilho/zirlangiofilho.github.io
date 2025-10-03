@@ -7,7 +7,7 @@ interface ContainterProps {
 }
 
 export const Container = styled.div<ContainterProps>`
-    width: 100%;             /* ocupa o espaço do slide */
+    width: 70%;             /* ocupa o espaço do slide */
     min-width: 260px;        /* impede de encolher demais */
     height: 300px;
 
